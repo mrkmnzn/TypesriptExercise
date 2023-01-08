@@ -1,15 +1,40 @@
 <html>
 
+    <fieldset>
+        <legend>Add Country Info</legend>
+        <input id="city" placeholder="City Name">
+        <input id="country" placeholder="Country">
+        <input id="population" placeholder="Population">
+    
+        <button value="Submit" onclick="addInfo(document.getElementById('city').value,
+        document.getElementById('country').value,
+        document.getElementById('population').value)">
+            Add
+        </button>
+    </fieldset>
 
-<form>
-    <input type="text" id="city" placeholder="City Name">
-    <input type="text" id="country" placeholder="Country">
-    <input type="text" id="population" placeholder="Population">
-
-    <input type="submit" id="add" placeholder="Add">
-
-</form>
+    <br><br><br>
+    
+    <fieldset>
+        <legend>Search Country</legend>
+        <input type="text" oninput="find()" id="search" placeholder="Search..">
+        <div id="searchList">
 
 
+        </div>
+    </fieldset>
+    
 
+    <br><br><br>
+
+    <fieldset>
+        <legend>Country List</legend>
+        <div id="countryList">
+
+        </div>
+    </fieldset>
+
+
+<script>var exports = {"__esModule" : { value: true }}</script>
+<script src="./index.js"></script>
 </html>
